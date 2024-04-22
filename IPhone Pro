@@ -1,0 +1,21 @@
+public class IPhonePro extends IPhone {
+    public double screenSize;
+    public double discount;
+
+    
+    public IPhonePro(String color, double price, String screenSize, double discount, String modelNo, double storage) {
+        
+        super(color, price, modelNo, storage);
+        
+        this.screenSize = Double.parseDouble(screenSize);
+        this.discount = discount;
+    }
+
+    public void printInfo() {
+        
+        super.printInfo();
+        
+        System.out.println("Screen Size: " + screenSize + " inches");
+        System.out.println("Discount: " + discount + "%");
+    }
+}
