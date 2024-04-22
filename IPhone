@@ -1,0 +1,22 @@
+public class IPhone extends Mobile {
+    public String modelNo;
+    public double storage;
+
+    
+    public IPhone(String color, double price, String modelNo, double storage) {
+        super(color, price);
+        
+        this.modelNo = modelNo;
+        this.storage = storage;
+    }
+
+    
+    
+    public void printInfo() {
+        
+        super.printInfo();
+        
+        System.out.println("Model No: " + modelNo);
+        System.out.println("Storage: " + storage + " GB");
+    }
+}
